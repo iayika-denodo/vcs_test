@@ -25,7 +25,7 @@ CREATE OR REPLACE TABLE dummy_nba_data I18N us_cst (
         assists_per_game:decimal (sourcetypeid = '2', sourcetyperadix = '10', sourcetypedecimals = '2', sourcetypesize = '5')
     )
     CONSTRAINT 'dummy_nba_data_pkey' PRIMARY KEY ( 'id' )
-    CACHE OFF
+    CACHE FULL
     BATCHSIZEINCACHE DEFAULT
     TIMETOLIVEINCACHE DEFAULT
     ADD SEARCHMETHOD dummy_nba_data(

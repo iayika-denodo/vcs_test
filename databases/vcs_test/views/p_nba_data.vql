@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE VIEW p_nba_data AS SELECT dummy_nba_data.id AS id, dummy_nba_data.player_name AS player_name, dummy_nba_data.team AS team, dummy_nba_data.position AS position, dummy_nba_data.points_per_game AS points_per_game, dummy_nba_data.rebounds_per_game AS rebounds_per_game, dummy_nba_data.assists_per_game AS assists_per_game FROM dummy_nba_data;
+
+ALTER VIEW p_nba_data
+ LAYOUT (dummy_nba_data = [20, 20, 200, 200]);
+

@@ -1,9 +1,10 @@
 ﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
 CREATE OR REPLACE DATASOURCE JDBC vc
+    FOLDER = '/1 - connectivity/1 - data sources'
     DRIVERCLASSNAME = 'org.postgresql.Driver'
-    DATABASEURI = '${databases.vcs_test.datasources.jdbc.vc.DATABASEURI}'
-    USERNAME = '${databases.vcs_test.datasources.jdbc.vc.USERNAME}'
-    USERPASSWORD = '${databases.vcs_test.datasources.jdbc.vc.USERPASSWORD}' ${databases.vcs_test.datasources.jdbc.vc.USERPASSWORD.ENCRYPTED}
+    DATABASEURI = '${databases.vcs_test.folder.1 - connectivity.folder.1 - data sources.datasources.jdbc.vc.DATABASEURI}'
+    USERNAME = '${databases.vcs_test.folder.1 - connectivity.folder.1 - data sources.datasources.jdbc.vc.USERNAME}'
+    USERPASSWORD = '${databases.vcs_test.folder.1 - connectivity.folder.1 - data sources.datasources.jdbc.vc.USERPASSWORD}' ${databases.vcs_test.folder.1 - connectivity.folder.1 - data sources.datasources.jdbc.vc.USERPASSWORD.ENCRYPTED}
     CLASSPATH = 'postgresql-12'
     DATABASENAME = 'postgresql'
     DATABASEVERSION = '12'

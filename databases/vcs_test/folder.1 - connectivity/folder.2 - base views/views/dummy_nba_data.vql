@@ -1,7 +1,8 @@
 ﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
 CREATE OR REPLACE WRAPPER JDBC dummy_nba_data
+    FOLDER = '/1 - connectivity/2 - base views'
     DATASOURCENAME=vc
-    SCHEMANAME='${databases.vcs_test.views.jdbc.dummy_nba_data.SCHEMANAME}' ESCAPE
+    SCHEMANAME='${databases.vcs_test.folder.1 - connectivity.folder.2 - base views.views.jdbc.dummy_nba_data.SCHEMANAME}' ESCAPE
     RELATIONNAME='dummy_nba_data' 
     OUTPUTSCHEMA (
         id = 'id' :'java.lang.Integer' (OPT) (sourcetypedecimals='0', sourcetyperadix='10', sourcetypesize='10', sourcetypeid='4', sourcetypename='serial')  NOT NULL SORTABLE IS_AUTOINCREMENT,
@@ -24,6 +25,7 @@ CREATE OR REPLACE TABLE dummy_nba_data I18N us_cst (
         rebounds_per_game:decimal (sourcetypeid = '2', sourcetyperadix = '10', sourcetypedecimals = '2', sourcetypesize = '5'),
         assists_per_game:decimal (sourcetypeid = '2', sourcetyperadix = '10', sourcetypedecimals = '2', sourcetypesize = '5')
     )
+    FOLDER = '/1 - connectivity/2 - base views'
     CONSTRAINT 'dummy_nba_data_pkey' PRIMARY KEY ( 'id' )
     CACHE OFF
     BATCHSIZEINCACHE DEFAULT
